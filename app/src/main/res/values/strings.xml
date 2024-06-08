@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Third Application</string>
+    <string name="enter_your_name">1)Enter Your Name=</string>
 </resources>

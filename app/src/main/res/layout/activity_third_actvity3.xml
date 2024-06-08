@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center|top"
+android:background="#D3EFFA"
+android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:text="Hello !"
+    android:textSize="60sp"
+    android:textColor="#ff00"
+    android:layout_margin="20dp"
+    android:textStyle="bold"
+    android:shadowColor="@color/black"
+    android:shadowRadius="14"
+    />
+
+<TextView
+    android:layout_width="match_parent"
+    android:textAlignment="center"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    android:shadowColor="@color/black"
+    android:shadowRadius="5"
+    android:layout_height="wrap_content"
+    android:text="Details of the Student"
+    android:padding="20sp"
+    />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold|italic"
+    android:text="Enter Your Name :"
+    android:textSize="20sp"
+
+    />
+<EditText
+    android:id="@+id/name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint=" enter your name..."
+    android:layout_marginBottom="20dp"
+    />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold|italic"
+    android:text="Enter your College Name :"
+    android:textSize="20sp"/>
+<EditText
+    android:id="@+id/college"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint=" enter your college name... "
+    android:layout_marginBottom="20dp"
+    />
+
+
+<Button
+    android:id="@+id/btncheck"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Check"
+    />
+<Button
+    android:id="@+id/move"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Move to Second"/>
+
+</LinearLayout>
