@@ -31,7 +31,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/enter_your_name"
+            android:text="1)Enter Your Name :"
             android:textSize="22dp"
             android:textStyle="bold|italic" />
 
@@ -44,7 +44,7 @@
             android:hint=" Enter your name"
             android:minHeight="48dp"
             android:paddingTop="7dp"
-            android:paddingRight="70dp"
+            android:paddingRight="35dp"
             android:textColor="@color/black" />
     </LinearLayout>
 

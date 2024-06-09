@@ -44,10 +44,10 @@ class MainActivity : AppCompatActivity() {
                 number?.error = "Number should be valid and should be of 10 digits"
             } else if (dob?.text?.toString()?.trim().isNullOrEmpty()) {
                 dob?.error = "Enter your dob"
-            }
-           else {
+            } else if(feildofstudy?.text?.isNullOrBlank() == true) {
+                    feildofstudy?.error = "Felid of Study is Empty"
+            }else {
                 var a = 10
-
                 var intent = Intent(this, ThirdActvity3::class.java)
                 intent.putExtra("name", name?.text?.toString()?.trim())
                 intent.putExtra("number", number?.text?.toString()?.trim())
@@ -58,16 +58,15 @@ class MainActivity : AppCompatActivity() {
         yes?.setOnClickListener {
             Toast.makeText(this, "Yes is clicked", Toast.LENGTH_SHORT).show()
         }
-        yes?.setOnClickListener {
-//            check?.setOnClickListener {
-//                if (feildofstudy?.text?.isNullOrBlank() == true) {
-//                    feildofstudy?.error = "Felid of Study is Empty"
-//                }
-//        }
-    }
-
         no?.setOnClickListener {
             Toast.makeText(this, "No is clicked", Toast.LENGTH_SHORT).show()
+            btn?.setOnClickListener {
+                var intent = Intent(this, ThirdActvity3::class.java)
+                intent.putExtra("name", name?.text?.toString()?.trim())
+                intent.putExtra("number", number?.text?.toString()?.trim())
+                intent.putExtra("dob", dob?.text?.trim()?.toString()?.toInt())
+                startActivity(intent)
+            }
         }
         yes?.setOnCheckedChangeListener { buttonView, isChecked ->
             if(isChecked){

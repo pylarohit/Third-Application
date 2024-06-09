@@ -14,22 +14,22 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class ThirdActvity3 : AppCompatActivity() {
-    var name: EditText? = null
+    var name1: EditText? = null
     var college: EditText? = null
-    var check: Button? = null
+    var btncheck: Button? = null
     var move: Button? =null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_third_actvity3)
-        name = findViewById(R.id.name)
+        name1 = findViewById(R.id.name1)
         college = findViewById(R.id.college)
-        check = findViewById(R.id.check)
+        btncheck = findViewById(R.id.btncheck)
         move = findViewById(R.id.move)
-        check?.setOnClickListener {
+        btncheck?.setOnClickListener {
             var intent =Intent(this, SecondActivity::class.java)
-            if (name?.text?.trim().isNullOrBlank()) {
-                name?.error = "Enter name"
+            if (name1?.text?.trim().isNullOrBlank()) {
+                name1?.error = "Enter name"
                 Toast.makeText(this, "Data is Empty", Toast.LENGTH_LONG).show()
             } else if (college?.text.isNullOrBlank()) {
                 college?.error = "Enter college name"
